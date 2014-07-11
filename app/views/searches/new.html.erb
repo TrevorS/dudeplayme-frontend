@@ -1,0 +1,17 @@
+<div class="music-search-container">
+  <div class="music-search">
+    <div class="search-logo-area">
+      <%= fa_icon 'headphones' %>
+    </div>
+    <%= form_tag('/searches', method: :get, class: 'pure-form') do %>
+      <div class="search-input-area">
+        <%= search_field(:search, :query, placeholder: 'Find Music', class: 'search-input pure-u-1') %>
+      </div>
+      <div class="search-button-area">
+        <%= button_tag(type: :submit, class: 'pure-button pure-button-primary search-button') do |button| %>
+          <%= fa_icon 'search' %> Search
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

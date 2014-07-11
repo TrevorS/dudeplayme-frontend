@@ -8,6 +8,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
+gem 'pure-css-rails'
+gem 'google-webfonts'
+gem 'font-awesome-rails'
+gem 'twitter-typeahead-rails'
 gem 'rspotify'
 
 group :doc do

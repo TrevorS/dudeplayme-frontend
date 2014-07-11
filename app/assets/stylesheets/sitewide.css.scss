@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 85%;
+  margin: auto;
+}
+
+.pure-menu .pure-menu-heading {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.music-search-container {
+  background-image: image-url('tools-splash.jpg');
+  background-size: cover;
+  height: 95vh;
+  padding-top: 100px;
+}
+
+.music-search {
+  margin: auto;
+  text-align: center;
+  margin-top: -35px;
+}
+
+.search-logo-area {
+  border: 2px;
+  border-color: rgb(0, 120, 231);
+  color: white;
+  font-size: 285px;
+}
+
+.search-input {
+  font-size: 30px;
+  height: 55px;
+  width: 55%;
+}
+
+.search-button-area {
+  padding-top: 35px;
+}
+
+.search-button {
+  font-size: 155%;
+  border-radius: 5px;
+}
