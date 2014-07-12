@@ -31,11 +31,14 @@ body {
   margin-top: -35px;
 }
 
-.search-logo-area {
-  border: 2px;
-  border-color: rgb(0, 120, 231);
+.search-logo-area-large {
   color: white;
   font-size: 285px;
+}
+
+.search-logo-area-small {
+  color: white;
+  font-size: 25px;
 }
 
 .search-input {
@@ -51,4 +54,8 @@ body {
 .search-button {
   font-size: 155%;
   border-radius: 5px;
+}
+
+.search-results-area {
+  background-color: white;
 }

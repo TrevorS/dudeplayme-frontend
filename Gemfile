@@ -6,13 +6,12 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
 
 gem 'pure-css-rails'
 gem 'google-webfonts'
 gem 'font-awesome-rails'
 gem 'twitter-typeahead-rails'
-gem 'rspotify'
+gem 'rspotify', github: 'guilhermesad/rspotify'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'

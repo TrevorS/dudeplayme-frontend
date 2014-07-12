@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/guilhermesad/rspotify.git
+  revision: cc4dcba17e0a113a21b8d099a1e4f5483647c500
+  specs:
+    rspotify (0.9.0)
+      omniauth-oauth2 (~> 1.1)
+      rest_client (~> 1.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,9 +58,6 @@ GEM
     hashie (3.2.0)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.1.2)
-      activesupport (>= 3.0.0, < 5)
-      multi_json (~> 1.2)
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -106,9 +111,6 @@ GEM
       json (~> 1.4)
     rest_client (1.7.3)
       netrc (~> 0.7.7)
-    rspotify (0.9.0)
-      omniauth-oauth2 (~> 1.1)
-      rest_client (~> 1.7)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -154,11 +156,10 @@ DEPENDENCIES
   annotate
   font-awesome-rails
   google-webfonts
-  jbuilder (~> 2.0)
   jquery-rails
   pure-css-rails
   rails (= 4.1.4)
-  rspotify
+  rspotify!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

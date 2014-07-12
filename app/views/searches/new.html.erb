@@ -1,11 +1,11 @@
 <div class="music-search-container">
   <div class="music-search">
-    <div class="search-logo-area">
+    <div class="search-logo-area-large">
       <%= fa_icon 'headphones' %>
     </div>
-    <%= form_tag('/searches', method: :get, class: 'pure-form') do %>
+    <%= form_tag('/searches', method: :get, remote: true, class: 'pure-form') do %>
       <div class="search-input-area">
-        <%= search_field(:search, :query, placeholder: 'Find Music', class: 'search-input pure-u-1') %>
+        <%= search_field(:search, :query, placeholder: 'Find Music', class: 'search-input pure-u-1', autofocus: true) %>
       </div>
       <div class="search-button-area">
         <%= button_tag(type: :submit, class: 'pure-button pure-button-primary search-button') do |button| %>
@@ -13,5 +13,6 @@
         <% end %>
       </div>
     <% end %>
+    <div class="search-results-area"></div>
   </div>
 </div>

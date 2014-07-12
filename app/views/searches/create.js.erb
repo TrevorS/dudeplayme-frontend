@@ -1,0 +1,38 @@
+$(".search-logo-area-large").removeClass("search-logo-area-large").addClass("search-logo-area-small");
+var results_area = $(".search-results-area");
+
+var tracks  = JSON.parse('<%== j @tracks   %>');
+var albums  = JSON.parse('<%== j @albums   %>');
+var artists = JSON.parse('<%== j @artists  %>');
+
+insert_artists(results_area, artists);
+insert_albums(results_area, albums);
+insert_tracks(results_area, tracks);
+
+function insert_artists(area, artists) {
+  var list = createResultsList(area, "artists");
+  $.each(artists, function(index, artist) {
+    console.log(artist.name);
+    list.append("<li>" + artist.name + "-" + artist.popularity + "</li>");
+  });
+}
+
+function insert_albums(area, albums) {
+  var list = createResultsList(area, "albums");
+  $.each(albums, function(index, album) {
+    console.log(album.name);
+    list.append("<li>" + album.name + "-" + album.popularity + "</li>");
+  });
+}
+
+function insert_tracks(area, tracks) {
+  var list = createResultsList(area, "tracks");
+  $.each(tracks, function(index, track) {
+    console.log(track.name);
+    list.append("<li>" + track.name + "-" + track.popularity + "</li>");
+  });
+}
+
+function createResultsList(area, type) {
+  return area.append("<ul></ul>").find("ul").addClass(type);
+}
