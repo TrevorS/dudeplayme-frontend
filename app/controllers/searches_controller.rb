@@ -20,6 +20,6 @@ class SearchesController < ApplicationController
 
   private
   def prepare_results(results, type)
-    results.select { |r| r.class == type }.sort { |x, y| y.popularity <=> x.popularity }.to_json
+    results.select { |r| r.class == type }.sort { |x, y| y.popularity <=> x.popularity }
   end
 end

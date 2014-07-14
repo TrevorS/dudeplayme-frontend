@@ -1,9 +1,9 @@
 <div class="music-search-container">
   <div class="music-search">
-    <div class="search-logo-area-large">
+    <div class="search-logo-area">
       <%= fa_icon 'headphones' %>
     </div>
-    <%= form_tag('/searches', method: :get, remote: true, class: 'pure-form') do %>
+    <%= form_tag(searches_path, class: 'pure-form') do %>
       <div class="search-input-area">
         <%= search_field(:search, :query, placeholder: 'Find Music', class: 'search-input pure-u-1', autofocus: true) %>
       </div>

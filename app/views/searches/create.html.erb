@@ -1,5 +1,11 @@
-<ul>
-  <% @tracks.each do |track| %>
-    <li><%= track.artists.first.name %> - <%= track.name %> / <%= track.popularity %> | <%= track.uri %></li>
-  <% end %>
-</ul>
+<div class="pure-g results">
+  <div class="pure-u-1">
+    <%= render 'tracks' %>
+  </div>
+  <div class="pure-u-1">
+    <%= render 'albums' %>
+  </div>
+  <div class="pure-u-1">
+    <%= render 'artists' %>
+  </div>
+</div>

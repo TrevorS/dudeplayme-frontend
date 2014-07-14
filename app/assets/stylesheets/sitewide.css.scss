@@ -12,50 +12,34 @@ body {
   margin: auto;
 }
 
+h1 {
+  margin: 0.15em;
+  font-size: 3em;
+}
+
+th {
+  color: #FFFFFF;
+  background-color: #0078e7;
+}
+
 .pure-menu .pure-menu-heading {
   text-transform: none;
   font-weight: 700;
   font-size: 25px;
 }
 
-.music-search-container {
-  background-image: image-url('tools-splash.jpg');
-  background-size: cover;
-  height: 95vh;
-  padding-top: 100px;
+.container {
+  padding-top: 60px;
 }
 
-.music-search {
-  margin: auto;
+.center {
   text-align: center;
-  margin-top: -35px;
 }
 
-.search-logo-area-large {
-  color: white;
-  font-size: 285px;
+.pull-right {
+  text-align: right;
 }
 
-.search-logo-area-small {
-  color: white;
-  font-size: 25px;
-}
-
-.search-input {
-  font-size: 30px;
-  height: 55px;
-  width: 55%;
-}
-
-.search-button-area {
-  padding-top: 35px;
-}
-
-.search-button {
-  font-size: 155%;
-  border-radius: 5px;
-}
-
-.search-results-area {
-  background-color: white;
+.pull-left {
+  text-align: left;
 }

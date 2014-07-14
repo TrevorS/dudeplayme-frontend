@@ -1,0 +1,30 @@
+<h1 class="center results-header">Tracks</h1>
+<table class="pure-table pure-table-horizontal pure-table-striped results-tracks">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Duration</th>
+      <th>Popularity</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @tracks.each.with_index(1) do |track, index| %>
+    <tr>
+      <td><%= index %></td>
+      <td><%= track.name %></td>
+      <td><%= track.artists.first.name %></td>
+      <td><%= track.album.name %></td>
+      <td><%= format_duration(track.duration_ms) %></td>
+      <td><%= popularity_stars(track.popularity) %></td>
+      <td>
+        <%= play_button(track) %>
+        <%= queue_button(track) %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

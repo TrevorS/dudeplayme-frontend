@@ -1,0 +1,86 @@
+.music-search-container {
+  background-image: image-url('tools-splash.jpg');
+  background-size: cover;
+  height: 95vh;
+}
+
+.music-search {
+  margin: auto;
+  text-align: center;
+  margin-top: -35px;
+}
+
+.search-logo-area {
+  color: white;
+  font-size: 285px;
+}
+
+.search-input {
+  font-size: 30px;
+  height: 55px;
+  width: 55%;
+}
+
+.search-button-area {
+  padding-top: 35px;
+}
+
+.search-button {
+  font-size: 155%;
+  border-radius: 5px;
+}
+
+.results {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.results-tracks td {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.results-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.results-tracks {
+  width: 100%;
+  margin: auto;
+}
+
+.search-command {
+  font-size: 70%;
+  color: white;
+  border-radius: 4px;
+}
+
+.search-command-queue {
+  background: rgb(66, 184, 221);
+}
+
+.search-command-play {
+  background: rgb(28, 184, 65);
+}
+
+.results-img {
+  border-radius: 3px;
+}
+
+.results-icon {
+  font-size: 75%;
+}
+
+.results-info {
+  font-size: 65%;
+}
+
+.results-no-artist,
+.results-no-artist:visited {
+  color: black;
+  text-align: center;
+  font-size: 948%;
+}
