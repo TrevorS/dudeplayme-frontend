@@ -1,2 +1,6 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(function() {
+  $('#search').submit(function() {
+    console.log('searching');
+    $('.search-button').children().removeClass('fa-search').addClass('fa-spinner fa-spin');
+  });
+});
