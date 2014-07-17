@@ -1,0 +1,4 @@
+<h1><%= @album.name %></h1>
+<%= image_tag(@album.images[1]['url'], alt: @album.name) %>
+<p>Artist Name: <%= @album.artists.first.name %></p>
+<p>Popularity: <%= popularity_stars(@album.popularity) %></p>
